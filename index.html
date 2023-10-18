@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Uploader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button id="downloadWatermarkButton" onclick="downloadWatermark()">Download VTDT Watermark</button>
+    <h1>VTDT ImageUploader</h1>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <img id="uploadedImage" alt="Uploaded Image" />
+    <div class="overlay-controls">
+      <input type="file" id="overlayImageUpload" accept="image/*" />
+      <label for="overlayImageUpload">> Add Overlay Image <</label>
+    </div>
+    <button id="removeButton" onclick="removeImage()">Remove Image</button>
+    <button id="downloadButton" onclick="downloadImage()" disabled>Download Image</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
